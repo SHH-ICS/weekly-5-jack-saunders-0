@@ -10,6 +10,10 @@ def main():
     # Read number of iterations from input (stdin)
     iterations = int(input().strip())
     
+    if iterations == 0:
+        print("0.000000")  # Handle the case for 0 iterations
+        return
+    
     # Calculate Pi
     pi_value = calculate_pi(iterations)
     
