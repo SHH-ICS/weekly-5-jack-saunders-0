@@ -1,19 +1,35 @@
 <!DOCTYPE HTML>
-  <head>
-    <title></title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculate Pi</title>
 
-    <!-- MDL Inclusions -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <!-- MDL Inclusions for basic styling -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body>
 
-  </head>
+  <!-- Form for user input -->
+  <div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col mdl-card mdl-shadow--2dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Calculate Pi</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        <form action="handler.php" method="POST">
+          <label for="iterations">Enter the number of iterations:</label>
+          <input type="number" id="iterations" name="iterations" required min="1">
+          <br>
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+            Calculate Pi
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 
-  <body>
-  
-    <form name="myForm" action="handler.php" method="POST">
-          
-    </form>
-
-  </body>
+</body>
 </html>
